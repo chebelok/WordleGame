@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06DECDD62971A6C600F8A0B0 /* wordleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DECDD52971A6C600F8A0B0 /* wordleApp.swift */; };
-		06DECDD82971A6C600F8A0B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DECDD72971A6C600F8A0B0 /* ContentView.swift */; };
-		06DECDDA2971A6C900F8A0B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDD92971A6C900F8A0B0 /* Assets.xcassets */; };
-		06DECDDD2971A6C900F8A0B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDDC2971A6C900F8A0B0 /* Preview Assets.xcassets */; };
+		06DECDF02971DBFD00F8A0B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DECDEF2971DBFD00F8A0B0 /* AppDelegate.swift */; };
+		06DECDF22971DBFD00F8A0B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DECDF12971DBFD00F8A0B0 /* SceneDelegate.swift */; };
+		06DECDF42971DBFD00F8A0B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DECDF32971DBFD00F8A0B0 /* ViewController.swift */; };
+		06DECDF72971DBFD00F8A0B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDF52971DBFD00F8A0B0 /* Main.storyboard */; };
+		06DECDF92971DC0000F8A0B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDF82971DC0000F8A0B0 /* Assets.xcassets */; };
+		06DECDFC2971DC0000F8A0B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDFA2971DC0000F8A0B0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06DECDD22971A6C600F8A0B0 /* wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06DECDD52971A6C600F8A0B0 /* wordleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordleApp.swift; sourceTree = "<group>"; };
-		06DECDD72971A6C600F8A0B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		06DECDD92971A6C900F8A0B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		06DECDDC2971A6C900F8A0B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06DECDEC2971DBFD00F8A0B0 /* WorldleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06DECDEF2971DBFD00F8A0B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06DECDF12971DBFD00F8A0B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		06DECDF32971DBFD00F8A0B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06DECDF62971DBFD00F8A0B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06DECDF82971DC0000F8A0B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06DECDFB2971DC0000F8A0B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06DECDFD2971DC0000F8A0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06DECDCF2971A6C600F8A0B0 /* Frameworks */ = {
+		06DECDE92971DBFD00F8A0B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,77 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06DECDC92971A6C600F8A0B0 = {
+		06DECDE32971DBFD00F8A0B0 = {
 			isa = PBXGroup;
 			children = (
-				06DECDD42971A6C600F8A0B0 /* wordle */,
-				06DECDD32971A6C600F8A0B0 /* Products */,
+				06DECDEE2971DBFD00F8A0B0 /* WorldleGame */,
+				06DECDED2971DBFD00F8A0B0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		06DECDD32971A6C600F8A0B0 /* Products */ = {
+		06DECDED2971DBFD00F8A0B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06DECDD22971A6C600F8A0B0 /* wordle.app */,
+				06DECDEC2971DBFD00F8A0B0 /* WorldleGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06DECDD42971A6C600F8A0B0 /* wordle */ = {
+		06DECDEE2971DBFD00F8A0B0 /* WorldleGame */ = {
 			isa = PBXGroup;
 			children = (
-				06DECDD52971A6C600F8A0B0 /* wordleApp.swift */,
-				06DECDD72971A6C600F8A0B0 /* ContentView.swift */,
-				06DECDD92971A6C900F8A0B0 /* Assets.xcassets */,
-				06DECDDB2971A6C900F8A0B0 /* Preview Content */,
+				06DECDEF2971DBFD00F8A0B0 /* AppDelegate.swift */,
+				06DECDF12971DBFD00F8A0B0 /* SceneDelegate.swift */,
+				06DECDF32971DBFD00F8A0B0 /* ViewController.swift */,
+				06DECDF52971DBFD00F8A0B0 /* Main.storyboard */,
+				06DECDF82971DC0000F8A0B0 /* Assets.xcassets */,
+				06DECDFA2971DC0000F8A0B0 /* LaunchScreen.storyboard */,
+				06DECDFD2971DC0000F8A0B0 /* Info.plist */,
 			);
-			path = wordle;
-			sourceTree = "<group>";
-		};
-		06DECDDB2971A6C900F8A0B0 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				06DECDDC2971A6C900F8A0B0 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = WorldleGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06DECDD12971A6C600F8A0B0 /* wordle */ = {
+		06DECDEB2971DBFD00F8A0B0 /* WorldleGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06DECDE02971A6C900F8A0B0 /* Build configuration list for PBXNativeTarget "wordle" */;
+			buildConfigurationList = 06DECE002971DC0000F8A0B0 /* Build configuration list for PBXNativeTarget "WorldleGame" */;
 			buildPhases = (
-				06DECDCE2971A6C600F8A0B0 /* Sources */,
-				06DECDCF2971A6C600F8A0B0 /* Frameworks */,
-				06DECDD02971A6C600F8A0B0 /* Resources */,
+				06DECDE82971DBFD00F8A0B0 /* Sources */,
+				06DECDE92971DBFD00F8A0B0 /* Frameworks */,
+				06DECDEA2971DBFD00F8A0B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = wordle;
-			productName = wordle;
-			productReference = 06DECDD22971A6C600F8A0B0 /* wordle.app */;
+			name = WorldleGame;
+			productName = WorldleGame;
+			productReference = 06DECDEC2971DBFD00F8A0B0 /* WorldleGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		06DECDCA2971A6C600F8A0B0 /* Project object */ = {
+		06DECDE42971DBFD00F8A0B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					06DECDD12971A6C600F8A0B0 = {
+					06DECDEB2971DBFD00F8A0B0 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 06DECDCD2971A6C600F8A0B0 /* Build configuration list for PBXProject "wordle" */;
+			buildConfigurationList = 06DECDE72971DBFD00F8A0B0 /* Build configuration list for PBXProject "WorldleGame" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,63 @@
 				en,
 				Base,
 			);
-			mainGroup = 06DECDC92971A6C600F8A0B0;
-			productRefGroup = 06DECDD32971A6C600F8A0B0 /* Products */;
+			mainGroup = 06DECDE32971DBFD00F8A0B0;
+			productRefGroup = 06DECDED2971DBFD00F8A0B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06DECDD12971A6C600F8A0B0 /* wordle */,
+				06DECDEB2971DBFD00F8A0B0 /* WorldleGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06DECDD02971A6C600F8A0B0 /* Resources */ = {
+		06DECDEA2971DBFD00F8A0B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06DECDDD2971A6C900F8A0B0 /* Preview Assets.xcassets in Resources */,
-				06DECDDA2971A6C900F8A0B0 /* Assets.xcassets in Resources */,
+				06DECDFC2971DC0000F8A0B0 /* LaunchScreen.storyboard in Resources */,
+				06DECDF92971DC0000F8A0B0 /* Assets.xcassets in Resources */,
+				06DECDF72971DBFD00F8A0B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06DECDCE2971A6C600F8A0B0 /* Sources */ = {
+		06DECDE82971DBFD00F8A0B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06DECDD82971A6C600F8A0B0 /* ContentView.swift in Sources */,
-				06DECDD62971A6C600F8A0B0 /* wordleApp.swift in Sources */,
+				06DECDF42971DBFD00F8A0B0 /* ViewController.swift in Sources */,
+				06DECDF02971DBFD00F8A0B0 /* AppDelegate.swift in Sources */,
+				06DECDF22971DBFD00F8A0B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		06DECDF52971DBFD00F8A0B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06DECDF62971DBFD00F8A0B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06DECDFA2971DC0000F8A0B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06DECDFB2971DC0000F8A0B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		06DECDDE2971A6C900F8A0B0 /* Debug */ = {
+		06DECDFE2971DC0000F8A0B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		06DECDDF2971A6C900F8A0B0 /* Release */ = {
+		06DECDFF2971DC0000F8A0B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,19 +280,18 @@
 			};
 			name = Release;
 		};
-		06DECDE12971A6C900F8A0B0 /* Debug */ = {
+		06DECE012971DC0000F8A0B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"wordle/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WorldleGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -279,7 +299,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.wordle;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WorldleGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -287,19 +307,18 @@
 			};
 			name = Debug;
 		};
-		06DECDE22971A6C900F8A0B0 /* Release */ = {
+		06DECE022971DC0000F8A0B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"wordle/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WorldleGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.wordle;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WorldleGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,25 +337,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06DECDCD2971A6C600F8A0B0 /* Build configuration list for PBXProject "wordle" */ = {
+		06DECDE72971DBFD00F8A0B0 /* Build configuration list for PBXProject "WorldleGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06DECDDE2971A6C900F8A0B0 /* Debug */,
-				06DECDDF2971A6C900F8A0B0 /* Release */,
+				06DECDFE2971DC0000F8A0B0 /* Debug */,
+				06DECDFF2971DC0000F8A0B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06DECDE02971A6C900F8A0B0 /* Build configuration list for PBXNativeTarget "wordle" */ = {
+		06DECE002971DC0000F8A0B0 /* Build configuration list for PBXNativeTarget "WorldleGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06DECDE12971A6C900F8A0B0 /* Debug */,
-				06DECDE22971A6C900F8A0B0 /* Release */,
+				06DECE012971DC0000F8A0B0 /* Debug */,
+				06DECE022971DC0000F8A0B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 06DECDCA2971A6C600F8A0B0 /* Project object */;
+	rootObject = 06DECDE42971DBFD00F8A0B0 /* Project object */;
 }
