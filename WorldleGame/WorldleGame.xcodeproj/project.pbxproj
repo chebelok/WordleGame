@@ -13,6 +13,8 @@
 		06DECDF72971DBFD00F8A0B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDF52971DBFD00F8A0B0 /* Main.storyboard */; };
 		06DECDF92971DC0000F8A0B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDF82971DC0000F8A0B0 /* Assets.xcassets */; };
 		06DECDFC2971DC0000F8A0B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06DECDFA2971DC0000F8A0B0 /* LaunchScreen.storyboard */; };
+		06DECE062971F5D500F8A0B0 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DECE052971F5D500F8A0B0 /* KeyboardViewController.swift */; };
+		06DECE0A2972087600F8A0B0 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DECE092972087600F8A0B0 /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		06DECDF82971DC0000F8A0B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06DECDFB2971DC0000F8A0B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06DECDFD2971DC0000F8A0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DECE052971F5D500F8A0B0 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		06DECE092972087600F8A0B0 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		06DECDEE2971DBFD00F8A0B0 /* WorldleGame */ = {
 			isa = PBXGroup;
 			children = (
-				06DECDEF2971DBFD00F8A0B0 /* AppDelegate.swift */,
-				06DECDF12971DBFD00F8A0B0 /* SceneDelegate.swift */,
-				06DECDF32971DBFD00F8A0B0 /* ViewController.swift */,
-				06DECDF52971DBFD00F8A0B0 /* Main.storyboard */,
-				06DECDF82971DC0000F8A0B0 /* Assets.xcassets */,
-				06DECDFA2971DC0000F8A0B0 /* LaunchScreen.storyboard */,
 				06DECDFD2971DC0000F8A0B0 /* Info.plist */,
+				06DECE042971F52600F8A0B0 /* otherStuff */,
+				06DECE032971F4E500F8A0B0 /* coreLogic */,
 			);
 			path = WorldleGame;
+			sourceTree = "<group>";
+		};
+		06DECE032971F4E500F8A0B0 /* coreLogic */ = {
+			isa = PBXGroup;
+			children = (
+				06DECDF32971DBFD00F8A0B0 /* ViewController.swift */,
+				06DECE052971F5D500F8A0B0 /* KeyboardViewController.swift */,
+				06DECE092972087600F8A0B0 /* BoardViewController.swift */,
+			);
+			path = coreLogic;
+			sourceTree = "<group>";
+		};
+		06DECE042971F52600F8A0B0 /* otherStuff */ = {
+			isa = PBXGroup;
+			children = (
+				06DECDF82971DC0000F8A0B0 /* Assets.xcassets */,
+				06DECDFA2971DC0000F8A0B0 /* LaunchScreen.storyboard */,
+				06DECDF52971DBFD00F8A0B0 /* Main.storyboard */,
+				06DECDEF2971DBFD00F8A0B0 /* AppDelegate.swift */,
+				06DECDF12971DBFD00F8A0B0 /* SceneDelegate.swift */,
+			);
+			path = otherStuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +163,8 @@
 				06DECDF42971DBFD00F8A0B0 /* ViewController.swift in Sources */,
 				06DECDF02971DBFD00F8A0B0 /* AppDelegate.swift in Sources */,
 				06DECDF22971DBFD00F8A0B0 /* SceneDelegate.swift in Sources */,
+				06DECE062971F5D500F8A0B0 /* KeyboardViewController.swift in Sources */,
+				06DECE0A2972087600F8A0B0 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
