@@ -28,13 +28,13 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             board.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             board.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            board.view.topAnchor.constraint(equalTo: view.topAnchor),
+            board.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             board.view.bottomAnchor.constraint(equalTo: keyboard.view.topAnchor),
             board.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
 
             keyboard.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             keyboard.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            keyboard.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            keyboard.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
 
