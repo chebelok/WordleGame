@@ -2,7 +2,7 @@ import UIKit
 
 protocol BoardViewControllerDatasource: AnyObject {
     var currentGuesses: [[Character?]] { get }
-//    func boxColor(at indexPath: IndexPath) -> UIColor?
+    func boxColor(at indexPath: IndexPath) -> UIColor?
 }
 
 class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource{
@@ -52,10 +52,12 @@ extension BoardViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
             fatalError()
         }
+        cell.backgroundColor = datasource?.boxColor(at: indexPath)
         let guesses = datasource?.currentGuesses ?? []
         if let letter = guesses[indexPath.section][indexPath.row] {
             cell.configure(with: letter)
         }
+        cell.layer.borderWidth = 1
         
         return cell
     }
