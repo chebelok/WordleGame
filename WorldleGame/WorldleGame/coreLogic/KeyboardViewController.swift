@@ -10,7 +10,7 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
         layout.minimumInteritemSpacing = 2
         let collectionVIew = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionVIew.translatesAutoresizingMaskIntoConstraints = false
-        collectionVIew.backgroundColor = .yellow
+        collectionVIew.backgroundColor = .clear
         collectionVIew.register(KeyCell.self, forCellWithReuseIdentifier: KeyCell.identifier)
         return collectionVIew
     }()
@@ -23,7 +23,7 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
         
@@ -47,6 +47,9 @@ extension KeyboardViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
             fatalError()
         }
+        
+        let letter = keys[indexPath.section][indexPath.row]
+        cell.configure(with: letter)
         return cell
     }
 
