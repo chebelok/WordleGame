@@ -1,10 +1,3 @@
-//
-//  KeyCell.swift
-//  WorldleGame
-//
-//  Created by Иван Лотохин on 14.01.2023.
-//
-
 import UIKit
 
 class KeyCell: UICollectionViewCell {
