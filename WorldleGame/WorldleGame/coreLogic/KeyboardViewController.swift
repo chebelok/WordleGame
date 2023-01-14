@@ -53,6 +53,7 @@ extension KeyboardViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
             fatalError()
         }
+        cell.layer.borderWidth = 1
         
         let letter = keys[indexPath.section][indexPath.row]
         cell.configure(with: letter)
