@@ -47,21 +47,32 @@ extension KeyboardViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
             fatalError()
         }
-
+//        let letter = keys[indexPath.section][indexPath.row]
+//        cell.configure(with: letter)
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 50, height: 50)
+        let margin: CGFloat = 20
+        let size: CGFloat = (collectionView.frame.size.width-margin)/10
 
+        return CGSize(width: size, height: size*1.5)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .zero
-
+        return UIEdgeInsets(
+            top: 2,
+            left: 0,
+            bottom: 2,
+            right: 0
+        )
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        //
+//        collectionView.deselectItem(at: indexPath, animated: true)
+//        let letter = keys[indexPath.section][indexPath.row]
+//        delegate?.keyboardViewController(self,
+//                                         didTapKey: letter)
     }
 }
