@@ -1,6 +1,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let answer = "there"
+    private var guesses: [[Character?]] = Array(repeating: Array(repeating: nil, count: 5), count: 6)
+    
     let keyboard = KeyboardViewController()
     let board = BoardViewController()
 
@@ -15,9 +19,12 @@ class ViewController: UIViewController {
         keyboard.delegate = self
         keyboard.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(keyboard.view)
+        
+        
         addChild(board)
         board.didMove(toParent: self)
         board.view.translatesAutoresizingMaskIntoConstraints = false
+        board.datasource = self
         view.addSubview(board.view)
         
         addConstraints()
@@ -44,5 +51,15 @@ class ViewController: UIViewController {
 extension ViewController: KeyboardViewControllerDelegate {
     func keyboardViewController(_ vc: KeyboardViewController, didTapKey letter: Character) {
         print(letter)
+    }
+}
+
+extension ViewController: BoardViewControllerDatasource {
+//    func boxColor(at indexPath: IndexPath) -> UIColor? {
+//        <#code#>
+//    }
+    
+    var currentGuesses: [[Character?]] {
+        return guesses
     }
 }

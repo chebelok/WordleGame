@@ -1,9 +1,14 @@
 import UIKit
 
+protocol BoardViewControllerDatasource: AnyObject {
+    var currentGuesses: [[Character?]] { get }
+//    func boxColor(at indexPath: IndexPath) -> UIColor?
+}
+
 class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource{
     
-    var guesses: [[Character?]] = Array(repeating: Array(repeating: nil, count: 5), count: 6)
-
+    weak var datasource: BoardViewControllerDatasource?
+    
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 2
@@ -30,10 +35,11 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
 
 extension BoardViewController {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return guesses.count
+        return datasource?.currentGuesses.count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let guesses = datasource?.currentGuesses ?? []
         return guesses[section].count
     }
 
