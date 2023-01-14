@@ -9,7 +9,7 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     
     weak var datasource: BoardViewControllerDatasource?
     
-    let collectionView: UICollectionView = {
+    private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 2
         let collectionVIew = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -31,6 +31,11 @@ class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
+    
+    public func reloadData() {
+        collectionView.reloadData()
+    }
+
 }
 
 extension BoardViewController {
@@ -46,6 +51,10 @@ extension BoardViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
             fatalError()
+        }
+        let guesses = datasource?.currentGuesses ?? []
+        if let letter = guesses[indexPath.section][indexPath.row] {
+            cell.configure(with: letter)
         }
         
         return cell
