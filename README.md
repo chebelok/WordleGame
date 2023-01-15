@@ -5,4 +5,4 @@ The rules are simle:
 - If letter is in the word, but in wrong position, cell is orange
 - If letter is in the word and in right position, cell is green
 - if all word is correct, all five cells are green
-![example1](./img/screenshot1)
+![example1](https://github.com/chebelok/WordleGame/blob/main/img/screenshot1.png)
