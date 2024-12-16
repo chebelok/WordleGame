@@ -1,2 +1,2 @@
-# simpleGame
-This is simple game made with Swift language
+# WordleGame
+This is wordle game clone made with Swift language
